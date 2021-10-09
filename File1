@@ -1,0 +1,17 @@
+index.js
+src
+    - routehandler.js
+    controllers
+        - controller1.js
+        - controller2.js
+    services
+        - service1.js
+        - service2.js
+    repositories
+        - tapwater.js
+        - rainwater.js
+        - oil.js
+    models
+        - tapwater.js
+        - rainwater.js
+        - oil.js
