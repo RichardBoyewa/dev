@@ -4,8 +4,12 @@ const serviceContainer = require('./services/index')
 const VeggieController = require('./controllers/controller1')
 const MeatAndOthersController = require('./controllers/controller2')
 
+const ThirdController = require('./controllers/controller3')
+
 const VeggieControllerHandler = VeggieController(serviceContainer, BagFood)
 const MeatAndOthersControllerHandler = MeatAndOthersController(serviceContainer, BagFood)
+
+const ThirdControllerInstance = new ThirdController(serviceContainer, BagFood)
 
 const routeHandlers = (server) => {
     // Endpoint and the corresponding HTTP Verbs definitions
